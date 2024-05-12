@@ -160,7 +160,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is in the past, False otherwise.
      */
     public static Boolean isDateInPast(Date dt) {
-        return null; // Replace null with the variable you used to store the result
+        if (dt < Date.today()) {
+            return true;
+        } else {
+            return false;
+        }
+        //return null; // Replace null with the variable you used to store the result
     }
 
     /**
